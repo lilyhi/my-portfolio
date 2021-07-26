@@ -7,4 +7,4 @@ export function validateEmail(email) {
   return re.test(String(email).toLowerCase());
 }
 
-//this from module but shoud work here?
+//this from module but should work here?
