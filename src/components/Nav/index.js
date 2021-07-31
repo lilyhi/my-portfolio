@@ -1,16 +1,14 @@
-import React , {useEffect } from "react";
+import React  from "react";
 import { capitalizeFirstLetter } from "../../utils/helpers";
 
 function Nav(props) {
   const {
     pages = [],
     setCurrentPage,
-    currentPage,
-    // contactSelected,
-    // setContactSelected
+    currentPage
   } = props;
 
-  console.log(pages,  "currentPage", currentPage, setCurrentPage); 
+  // console.log(pages,  "currentPage", currentPage, setCurrentPage); 
 
 
   return (
@@ -22,17 +20,7 @@ function Nav(props) {
       </h2>
       <nav>
         <ul className="flex-row">
-          {/* <li className="mx-2">
-            <a data-testid="about" href="#about" onClick={() => setCurrentPage({name:"about"})}>
-              About me
-            </a>
-          </li> */}
-          {/* <li className={`mx-2 ${contactSelected && 'navActive'}`}>
-            <span onClick={() => setContactSelected(true)}>
-              Contact
-            </span>
-          </li> */}
-          {/* !contactSelected && */}
+          {/* looping throught the navigation list creeated in app.js  */}
           {pages.map((page) => (
             <li
               className={`mx-1 ${
@@ -45,7 +33,6 @@ function Nav(props) {
                   console.log(page);
                   //update the current page value 
                   setCurrentPage(page);
-                  // setContactSelected(false);
                 }}
               >
                 {capitalizeFirstLetter(page.name)}

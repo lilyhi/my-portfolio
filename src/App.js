@@ -44,8 +44,7 @@ function App() {
   const [currentPage, setCurrentPage] = useState(pages[0]);
 
   const renderSwitch = (page) => {
-    console.log("render", page);
-    switch(page) {
+    switch(page.name) {
       case "About Me":
           return <About />;
       case "Contact":
