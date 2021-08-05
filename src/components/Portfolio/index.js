@@ -6,7 +6,7 @@ function Portfolio() {
     {
       id: 1,
       title: "Coding Quiz",
-      image: "./assets/portfolio/image1.png",
+      image: "../../assets/portfolio/cover-image.png",
       githubLink: "http://github.com/lilyhi/code-quiz",
       description: "sample description",
       keywords: ["HTML", "CSS", "Javascript"],

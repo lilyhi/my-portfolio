@@ -2,16 +2,16 @@ import React from 'react';
 
 //PHOTOLIST refer
 function Resume() {
-  const [skillSet]= useState([
-    {
-      category: "Front-End", 
-      choices: ["HTML", "CSS", "Javascript","React JS"]
-    },
-    {
-      category: "Back-End", 
-      choices: ["MySQL", "MongoDB", "Sequlize",""]
-    }
-])
+//   const [skillSet]= useState([
+//     {
+//       category: "Front-End", 
+//       choices: ["HTML", "CSS", "JavaScript", "jQuery,", "Bootstrap", "React JS"]
+//     },
+//     {
+//       category: "Back-End", 
+//       choices: ["APIs", "Node", "Express", "MySQL", "Sequlize", "MongoDB", "Mongoose", REST, GraphQL ]
+//     }
+// ])
   return (
     <h1>Hello Resume</h1>
   )
