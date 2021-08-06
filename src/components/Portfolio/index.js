@@ -6,7 +6,7 @@ function Portfolio() {
     {
       id: 1,
       title: "Coding Quiz",
-      image: "../../assets/portfolio/cover-image.png",
+      image: `${process.env.PUBLIC_URL}/portfolio/code-quiz.png`,
       githubLink: "http://github.com/lilyhi/code-quiz",
       description: "sample description",
       keywords: ["HTML", "CSS", "Javascript"],
@@ -15,7 +15,7 @@ function Portfolio() {
     {
       id: 2,
       title: "Coding Quiz",
-      image: "./assets/portfolio/image1.png",
+      image: `${process.env.PUBLIC_URL}/portfolio/daily-planner.png`,
       githubLink: "http://github.com/lilyhi/code-quiz",
       description: "sample description",
       keywords: ["HTML", "CSS", "Javascript"],
@@ -25,20 +25,48 @@ function Portfolio() {
     {
       id: 3,
       title: "Coding Quiz",
-      image: "./assets/portfolio/image1.png",
+      image: `${process.env.PUBLIC_URL}/portfolio/budget-tracker.png`,
       githubLink: "http://github.com/lilyhi/code-quiz",
       description: "sample description",
       keywords: ["HTML", "CSS", "Javascript"],
       deployed:"http://www.google.com"
     },
+      {
+      id: 4,
+      title: "Coding Quiz",
+      image: `${process.env.PUBLIC_URL}/portfolio/note-taker.png`,
+      githubLink: "http://github.com/lilyhi/code-quiz",
+      description: "sample description",
+      keywords: ["HTML", "CSS", "Javascript"],
+      deployed:"http://www.google.com"
+    },
+    {
+      id: 5,
+      title: "Coding Quiz",
+      image: `${process.env.PUBLIC_URL}/portfolio/trivia-game.png`,
+      githubLink: "http://github.com/lilyhi/code-quiz",
+      description: "sample description",
+      keywords: ["HTML", "CSS", "Javascript"],
+      deployed:"http://www.google.com"
+
+    },
+    {
+      id: 6,
+      title: "Coding Quiz",
+      image: `${process.env.PUBLIC_URL}/portfolio/weather-dash.png`,
+      githubLink: "http://github.com/lilyhi/code-quiz",
+      description: "sample description",
+      keywords: ["HTML", "CSS", "Javascript"],
+      deployed:"http://www.google.com"
+    }
   ]);
   return (
-    <>
+    <div>
       <h1>Hello Portfolio</h1>
    <hr className="bg-secondary"/> 
       {/* Loop through the list of projects  */}
       <div>
-        <div className="flex-row">
+        <div className="flex-row projectContainer">
           {projectList.map((project, i) => (
             // console.log("project", project, i )
             <ProjectCard
@@ -52,7 +80,7 @@ function Portfolio() {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

@@ -19,7 +19,7 @@ main {
 }
 :root {
   --primary: #F7AF9D;
-  --secondary: #A1E8CC;
+  --secondary: #41e9a6;
   --tertiary: #91A6FF;
   --light: #C5DECD;
   --dark: #5E6572;
@@ -94,10 +94,26 @@ p {
   margin-top: 0;
 }
 
-a {
-  color: var(--tertiary);
+.projectLinks >a {
+  color:#5E6572;
   text-decoration: none;
   font-weight: bold;
+  margin-right: 10px;
+}
+
+.projectCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 40px;
+  width: 500px;
+  background-color: rgb(252, 197, 183);
+  padding: 10px;
+}
+
+.projectContainer {
+  max-width: 1400px;
+  justify-content: center;
 }
 
 a:hover {
