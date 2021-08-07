@@ -135,6 +135,10 @@ p {
     padding-right: 2%;
 }
 
+#about {
+  padding-right: 3%;
+}
+
 a:hover {
   text-decoration: underline;
   color: rgb(55, 53, 53);
@@ -207,10 +211,15 @@ nav a:hover {
 
 nav  li {
   cursor: pointer;
+  /* justify-content: space-around; */
+  padding-right: 40px;
 }
+
 .navList {
   padding: 30px;
   justify-content: space-between;
+  font-size: 23px;
+  /* padding-left: 40px; */
 }
 
 textarea {
@@ -297,6 +306,13 @@ footer {
 .card {
   width: 25%;
   text-align: center;
+  background-color: rgb(183 198 252);
+  border-radius: 25px;
+  color: gray;
+}
+
+.skills li {
+  list-style-type: circle;
 }
 
 .img-thumbnail {

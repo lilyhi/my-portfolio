@@ -28,6 +28,7 @@ function About() {
         style={{ width: "30%" }} alt="headshot of Lily" />
       </div> 
       <br/>
+      <br/>
       <div className="my-2 aboutMe">
         <p>
         As a highly organized individual who enjoys problem solving, I was drawn to coding as a way to channel my interests and abilities. I thrive when I get to utilize my detective skills on a project to determine issues and uncover resolutions. I’m persistent and stay hyper focused until I can find the solution I’m looking for!
