@@ -14,7 +14,8 @@ function Resume() {
 // ])
   return (
     <div>
-      <h1>Hello Resume</h1>
+      <h1 className= "main-title">Resume</h1>
+      <hr className="break-line"/> 
         <a href={`${process.env.PUBLIC_URL}/resume/Liliana_Hissong_Resume.pdf`}target="_blank" rel="noreferrer">Download Resume</a>
     </div>
   )

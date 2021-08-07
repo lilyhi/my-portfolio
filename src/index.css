@@ -19,7 +19,7 @@ main {
 }
 /* #41e9a6 */
 :root {
-  --primary: #F7AF9D;
+  --primary: #C5DECD;
   --secondary: hsl(229, 92%, 69%);
   --tertiary: #91A6FF;
   --light: #C5DECD;
@@ -91,8 +91,9 @@ h6 {
 }
 
 p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin-top: 0;
+  /* padding-right: 1%; */
 }
 
 .projectLinks >a {
@@ -108,7 +109,8 @@ p {
   align-items: center;
   margin: 20px 40px;
   width: 500px;
-  background-color: rgb(252, 197, 183);
+  /* background-color: rgb(252, 197, 183); */
+  background-color: rgb(183 198 252);
   padding: 10px;
 }
 
@@ -125,10 +127,17 @@ p {
 .aboutIntro {
   display: flex;
   align-items: center;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
+  /* i had flex wrap commented out */
 }
+
+.aboutMe {
+    padding-right: 2%;
+}
+
 a:hover {
   text-decoration: underline;
+  color: rgb(55, 53, 53);
 }
 
 header {
@@ -175,10 +184,12 @@ form {
 input {
   font-size: 1rem;
   padding: 0.25rem;
-  border: 1px solid var(--dark);
+	border: 3px solid #a6b2bb;
   outline: none;
   border-radius: 3px;
   transition: box-shadow 0.2s;
+  background: #f5d3cb;
+  border-radius: 10px;
 }
 
 input:focus {
@@ -197,12 +208,18 @@ nav a:hover {
 nav  li {
   cursor: pointer;
 }
+.navList {
+  padding: 30px;
+  justify-content: space-between;
+}
 
 textarea {
 	width: 600px;
 	height: 120px;
-	border: 3px solid #cccccc;
+	border: 3px solid #a6b2bb;
+  background: #f5d3cb;
 	padding: 5px;
+  border-radius: 10px;
 } 
 
 footer {
@@ -289,7 +306,7 @@ footer {
   cursor: pointer;
 }
 
-.modalBackdrop {
+/* .modalBackdrop {
 	background: rgba(0, 0, 0, .65);
 	bottom: 0;
 	left: 0;
@@ -313,7 +330,7 @@ footer {
 	font-size: 18px;
 	font-weight: 600;
 	margin-bottom: 25px;
-}
+} */
 
 button {
 	background: var(--primary);
@@ -321,10 +338,20 @@ button {
 	border-radius: 5px;
 	color: #fff;
 	cursor: pointer;
-	font-size: 16px;
+	font-size: 35px;
 	font-weight: 600;
 	margin-bottom: 30px;
 	padding: 10px 15px;	
+}
+
+.main-title {
+  text-align: center;
+
+}
+
+.personal-image {
+  border-radius: 55px;
+  border: 4px solid #f5d3cb;
 }
 
 a {
@@ -337,6 +364,10 @@ a {
 	
 }
 
+.break-line {
+  border: 4px dotted #f5d3cb;
+}
+
 .navActive {
-  color: var(--secondary);
+  color: gray;
 }

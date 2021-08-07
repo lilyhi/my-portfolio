@@ -47,15 +47,15 @@ function ContactForm() {
   return (
     <section className="contactContainer">
       <div>
-      <h1 data-testid="h1tag">Contact Me</h1>      
+      <h1 data-testid="h1tag">Contact Me:</h1>&nbsp;      
       <form id="contact-form" onSubmit={handleSubmit}>
         <div className="form-group">
-          <label htmlFor="name">Name:</label>
-          <input type="text" defaultValue={name} onBlur={handleChange} name="name" />
+          <label htmlFor="name">Name:</label> 
+          <input style={{marginLeft:"5px"}} type="text" defaultValue={name} onBlur={handleChange} name="name" />
         </div>
         <div className="form-group">
           <label htmlFor="email">Email:</label>
-          <input type="email" defaultValue={email} name="email" onBlur={handleChange} />
+          <input style={{marginLeft:"5px"}} type="email" defaultValue={email} name="email" onBlur={handleChange} />
         </div>
         <div className="form-check">
           <label className="form-check-label" htmlFor="message">Message:</label>
@@ -66,14 +66,14 @@ function ContactForm() {
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-        <button data-testid="button" type="submit">Submit</button>      
+        <button data-testid="button" type="submit" className="btn btn-outline-secondary btn-lg">Submit</button>      
       </form>
       </div>
       <div>
-        <h1>My Details</h1>
+        <h1>My Details:</h1>&nbsp;
         <p>Email: lilyygf@gmail.com</p>
-        <p>PO Box 714</p>
-        <p>799-876-1212</p>
+        <p>Phone: (602)349-1267</p>
+        <p>Phoenix, AZ</p>
       </div>
     </section>
   );

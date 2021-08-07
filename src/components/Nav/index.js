@@ -13,13 +13,13 @@ function Nav(props) {
 
   return (
     <header className="flex-row px-1">
-      <h2>
+      {/* <h2>
         <a data-testid="link" href="/">
           <span role="img"></span> Lily
         </a>
-      </h2>
+      </h2> */}
       <nav>
-        <ul className="flex-row">
+        <ul className="flex-row navList">
           {/* looping throught the navigation list creeated in app.js  */}
           {pages.map((page) => (
             <li

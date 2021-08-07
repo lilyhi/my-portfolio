@@ -62,8 +62,8 @@ function Portfolio() {
   ]);
   return (
     <div>
-      <h1>Hello Portfolio</h1>
-   <hr className="bg-secondary"/> 
+      <h1 className= "main-title">Portfolio</h1>
+    <hr className="break-line"/> 
       {/* Loop through the list of projects  */}
       <div>
         <div className="flex-row projectContainer">
