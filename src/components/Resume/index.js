@@ -13,7 +13,10 @@ function Resume() {
 //     }
 // ])
   return (
-    <h1>Hello Resume</h1>
+    <div>
+      <h1>Hello Resume</h1>
+        <a href={`${process.env.PUBLIC_URL}/resume/Liliana_Hissong_Resume.pdf`}target="_blank" rel="noreferrer">Download Resume</a>
+    </div>
   )
 }
 

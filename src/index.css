@@ -17,9 +17,10 @@ main {
 	max-width: 90%;
   padding: 50px 30px;
 }
+/* #41e9a6 */
 :root {
   --primary: #F7AF9D;
-  --secondary: #41e9a6;
+  --secondary: hsl(229, 92%, 69%);
   --tertiary: #91A6FF;
   --light: #C5DECD;
   --dark: #5E6572;
@@ -116,6 +117,16 @@ p {
   justify-content: center;
 }
 
+.contactContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.aboutIntro {
+  display: flex;
+  align-items: center;
+  /* flex-wrap: wrap; */
+}
 a:hover {
   text-decoration: underline;
 }
@@ -192,8 +203,15 @@ textarea {
 	height: 120px;
 	border: 3px solid #cccccc;
 	padding: 5px;
-}
+} 
 
+footer {
+  font-size: 34px;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  padding: 50px 25%;
+}
 .container {
   width: 85%;
   max-width: 1200px;
@@ -311,7 +329,7 @@ button {
 
 a {
 	border-radius: 5px;
-	color: var(--primary);
+	color: gray;
 	font-weight: 600;
 	padding: 2px 4px;
 	margin-left: -2px;

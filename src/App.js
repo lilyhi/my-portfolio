@@ -6,6 +6,7 @@ import About from './components/About';
 import Portfolio from './components/Portfolio';
 import ContactForm from './components/Contact';
 import Resume from './components/Resume';
+import Footer from './components/Footer';
 
 // function App() {
 //   const [currentCategory, setCurrentCategory] = useState(categories[0]);
@@ -69,6 +70,7 @@ function App() {
         {renderSwitch(currentPage)}
      
       </main>
+      <Footer/>
     </div>
   );
 }

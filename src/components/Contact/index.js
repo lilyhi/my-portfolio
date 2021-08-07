@@ -45,19 +45,20 @@ function ContactForm() {
   // }  
   
   return (
-    <section>
+    <section className="contactContainer">
+      <div>
       <h1 data-testid="h1tag">Contact Me</h1>      
       <form id="contact-form" onSubmit={handleSubmit}>
-        <div>
+        <div className="form-group">
           <label htmlFor="name">Name:</label>
           <input type="text" defaultValue={name} onBlur={handleChange} name="name" />
         </div>
-        <div>
-          <label htmlFor="email">Email address:</label>
+        <div className="form-group">
+          <label htmlFor="email">Email:</label>
           <input type="email" defaultValue={email} name="email" onBlur={handleChange} />
         </div>
-        <div>
-          <label htmlFor="message">Message:</label>
+        <div className="form-check">
+          <label className="form-check-label" htmlFor="message">Message:</label>
           <textarea name="message" defaultValue={message} onBlur={handleChange} rows="5"  />
         </div>
         {errorMessage && (
@@ -65,8 +66,15 @@ function ContactForm() {
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-        <button data-testid="button" type="submit">Submit</button>
+        <button data-testid="button" type="submit">Submit</button>      
       </form>
+      </div>
+      <div>
+        <h1>My Details</h1>
+        <p>Email: lilyygf@gmail.com</p>
+        <p>PO Box 714</p>
+        <p>799-876-1212</p>
+      </div>
     </section>
   );
 }
