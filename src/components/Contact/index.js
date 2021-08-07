@@ -46,8 +46,8 @@ function ContactForm() {
   
   return (
     <section className="contactContainer">
-      <div>
-      <h1 data-testid="h1tag">Contact Me:</h1>&nbsp;      
+      <div className= "contactBox">
+      <h1 data-testid="h1tag" className="titleSubject">Contact Me:</h1>&nbsp;      
       <form id="contact-form" onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="name">Name:</label> 
@@ -59,7 +59,7 @@ function ContactForm() {
         </div>
         <div className="form-check">
           <label className="form-check-label" htmlFor="message">Message:</label>
-          <textarea name="message" defaultValue={message} onBlur={handleChange} rows="5"  />
+          <textarea name="message" defaultValue={message} onBlur={handleChange} rows="5"  />&nbsp;
         </div>
         {errorMessage && (
           <div>
@@ -69,7 +69,7 @@ function ContactForm() {
         <button data-testid="button" type="submit" className="btn btn-outline-secondary btn-lg">Submit</button>      
       </form>
       </div>
-      <div>
+      <div className="myDetails">
         <h1>My Details:</h1>&nbsp;
         <p>Email: lilyygf@gmail.com</p>
         <p>Phone: (602)349-1267</p>
