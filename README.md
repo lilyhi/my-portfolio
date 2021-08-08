@@ -11,7 +11,7 @@ Personal portfolio created with React as a SPA.
 * React
 
 ## Website 
-https://lilyhi.github.io/react-portfolio/
+https://lilyhi.github.io/my-portfolio/
 
 ## Contribution
 Made by Lily Hissong 🌿
