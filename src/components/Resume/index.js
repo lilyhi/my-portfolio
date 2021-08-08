@@ -1,6 +1,5 @@
 import React from 'react';
 
-//PHOTOLIST refer
 function Resume() {
 //   const [skillSet]= useState([
 //     {
